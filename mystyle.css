@@ -1,1 +1,23 @@
-IN NEED TO WORK ON THIS
+body {
+    background-color: #DAE5FA;
+}
+
+h1 {
+    
+    color: #1D335F;
+    font-family: verdana;
+    font-size: 200;
+}
+
+p1 {
+    color: #123575;
+    font-family: verdana;
+    font-size: 120;
+}
+
+
+ul {
+    color: #404F6A;
+    font-family: verdana;
+    font-size: 100;
+}

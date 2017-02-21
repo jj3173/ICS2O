@@ -1,0 +1,47 @@
+body {
+    background-color: #DAE5FA;
+}
+
+h1 {
+    
+    color: #1D335F;
+    font-family: verdana;
+    font-size: 50;
+}
+
+h2 {
+    color: #1F618D;
+    font-family: verdana;
+    font-size: 15;
+}
+
+h3 {
+    color: #1F618D;
+    font-family: verdana;
+    font-size: 15;
+}
+
+h4 {
+    color: #123575;
+    font-family: verdana;
+    font-size: 30;
+}
+
+p1 {
+    color: #123575;
+    font-family: verdana;
+    font-size: 20;
+}
+
+p2 {
+    color: #1D335F;
+    font-family: verdana;
+    font-size: 15;
+}
+
+
+ol {
+    color: #404F6A;
+    font-family: verdana;
+    font-size: 25;
+}
