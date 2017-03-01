@@ -13,18 +13,23 @@ h2 {
     color: #123575;
     font-family: verdana;
     font-size: 25;
+   	text-align: center; 
+
 }
 
 h3 {
-    color: #1F618D;
-    font-family: verdana;
-    font-size: 15;
-}
-
-h4 {
     color: #123575;
     font-family: verdana;
     font-size: 25;
+    text-align: center; 
+
+}
+
+h4 {
+    color: #1F618D;
+    font-family: verdana;
+    font-size: 15;
+
 }
 
 
