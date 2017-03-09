@@ -6,11 +6,11 @@ function draw() {
 background (188, 228, 235);
 
 // The ground
-stroke(0);
 fill (90, 209, 128);
 rect(0, 300, 400, 100);  
 
 // The sun
+stroke(0);
 fill (245, 221, 103);
 ellipse(80, 64, 100, 100);  
 
