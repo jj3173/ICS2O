@@ -6,6 +6,7 @@ function draw() {
 background (188, 228, 235);
 
 // The ground
+stroke(0);
 fill (90, 209, 128);
 rect(0, 300, 400, 100);  
 
@@ -20,7 +21,6 @@ ellipse(200, 200, 100, 100);
 ellipse(200, 120, 75, 75);
 
 // Arms
-stroke(0);
 strokeWeight (2);
 line (70, 150, 150, 200);
 line (330, 150, 250, 200);
