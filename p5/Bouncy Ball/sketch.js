@@ -5,7 +5,7 @@ var speedY = 3;
 var backColor;
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(600, 400);
   backColor = color(0, 0, 0)
 }
 
