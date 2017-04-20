@@ -1,6 +1,6 @@
 /* Bouncy Ball Assignment
 Jieru
-4/20/2017 */
+2017-04-20 */
 
 //I'm going to make a bouncy ball bouce from two sides of the wall
 
