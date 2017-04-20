@@ -39,11 +39,13 @@ function draw() {
 		     speedY= -speedY;
 		     backColor = color(random(255), random(255), random(255));
 		   }
+	
 		//the border of the frame
 		   if (posX < 0){
 		     speedX = -speedX;
 		     backColor = color(random(255), random(255), random(255));
 		   }
+	
 		//the border of the frame
 		  if(posY < 0) {
 		    speedY = -speedY;
