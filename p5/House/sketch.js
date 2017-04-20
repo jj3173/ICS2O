@@ -8,9 +8,10 @@ function setup() {
 }
 
 function draw(){
-
+	//background sky
 	background(195, 237, 250);
-
+	
+	//variables
 	var posX = 20;
 	var posY =280;
 	var houseSize =100;
