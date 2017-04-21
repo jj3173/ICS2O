@@ -1,6 +1,6 @@
 /*Make It Rain
 Jieru 
-4/20/2017 */
+2017-04-21 */
 
 //these are the global variables
 var xPositions = [];
