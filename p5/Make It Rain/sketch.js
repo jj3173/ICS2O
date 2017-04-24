@@ -11,10 +11,11 @@ var yPositions = [];
 
 
 function setup() {
+	//size of the canvas
  	createCanvas(400, 400);
 	//randomly create raindrops on the canvas
 	for(var rainNum = 0; rainNum<20; rainNum++) {
-    
+    		
 		xPositions.push(random(0,400));
     
 		yPositions.push(random(0,400));
@@ -30,12 +31,13 @@ function draw() {
  
    
 	for (var i = 0; i < xPositions.length; i++) {
-        
+        	//turn off outlines for shapes
 		noStroke();
         
 		//this changes the color of the raindrops randomly
 		fill(random(255), random(255), random(255));
         
+		//ellipse size is 10 by 10, but position is randomed
 		ellipse(xPositions[i], yPositions[i], 10, 10);
         
 		yPositions[i] += 3;
