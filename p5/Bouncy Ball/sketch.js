@@ -29,14 +29,14 @@ function draw() {
 
 		//the border of the frame
 		   if (posX > 390){
-		     speedX = -speedX;
+		     speedX = -speedX + 1;
 			   //changes color when it hits the border
 		     backColor = color(random(255), random(255), random(255));
 		   }  
 
 		//the border of the frame
 		   if (posY > 390){
-		     speedY= -speedY;
+		     speedY= -speedY - 1;
 		     backColor = color(random(255), random(255), random(255));
 		   }
 	
