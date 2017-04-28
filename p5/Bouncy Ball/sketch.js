@@ -1,6 +1,6 @@
 /* Bouncy Ball Assignment
 Jieru
-2017-04-20 */
+2017-04-28 */
 
 //I'm going to make a bouncy ball bouce from two sides of the wall
 
@@ -17,7 +17,7 @@ var faceSize = 30;
 //this variable is explained in the function setup
 var backColor;
 
-function setup() 
+function setup() {
   //size of the canvas
   createCanvas(400, 400);
   //color of the canvas to start off
