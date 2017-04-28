@@ -7,7 +7,7 @@ var backColor;
 
 function setup() {
   createCanvas(400, 400);
-  backColor = color(0, 0, 0)
+  backColor = color(0, 0, 0);
 }
 
 
