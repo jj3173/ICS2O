@@ -18,7 +18,7 @@ var speedY = 2;
 function setup() {
   //canvas size
   var myCanvas = createCanvas(640, 480);
-  myCanvas.parent('UnitTest');
+  myCanvas.parent('Soccer');
 }
 
 function draw() {
