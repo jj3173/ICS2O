@@ -3,8 +3,8 @@ Jieru
 4/27/2017 */
 
 //Global Variables also know as the how many he got (on the left) and how many balls he missed (right)
-var scoreA = 6;
-var scoreB = 9;
+var scoreA = 0;
+var scoreB = 0;
 
 //position of the ball using variables
 var posX = 0;
