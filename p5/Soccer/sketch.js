@@ -58,6 +58,7 @@ function draw() {
 	  posY = 1;
 	speedX = 3;
 	speedY = 2;
+	scoreA = scoreA + 1 //score on the left - how many balls missed by Bob
 	}	
 
 	if (posY>= height) {
@@ -68,6 +69,7 @@ function draw() {
 	}
 	if (posX <= 0) {
 	  speedX = -speedX;
+	scoreB = scoreB+1 //score on the right - how many balls he kicked to the net
 	}
 
 	if (posY <= 0) {
