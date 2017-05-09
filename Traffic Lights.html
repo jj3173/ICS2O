@@ -3,7 +3,8 @@
 <html> 
 <head>  
 
-<title>Traffic Lights</title>
+<title>Traffic Lights</title>
+
      
   <style>
 
@@ -36,41 +37,104 @@
 		}
 
 
-  </style>
+ </style>
  </head>
 
 <body>
-<h1>Traffic Lights</h1>
-<p>This page will inform you regarding traffic lights and all the information concerning this topic!</p>
-
-<h2>Safety</h2>
-<p>Traffic lights are an element of security when driving. These lights prevent accidents between cars and cars/pedestrians. Pedestrians would no longer need to run across a dangerous road and have the opportunity to safely cross at their turn. Traffic lights are also used to control the traffic to ensure the flow of the cars, adapting the lights to suit the traffic flow at various times during the day. <p>
+	<h1>Traffic Lights</h1>
+	<p>This page will inform you regarding traffic lights and all the information concerning this topic!</p>
 
 
-<h2>Concerns</h2>
-<p>Even though traffic lights are used to ensure safety for drivers and pedestrians, there are still some concerns.With one small miscoordination in the lights, can result in a huge accident. For example, mis-timing of the lights going in opposing directions can lead to all the cars colliding in the center of the street. Also, if the lights aren�t timed to suit the traffic level, this can lead to build up on traffic in certain lanes, disturbing the traffic flow. Lights malfunctions can lead to concerns. For example, if a light suddenly stops working, it would put the drivers and pedestrians at risk for collisions. </p>
+	<h2>Safety</h2>
+	<p>Traffic lights are an element of security when driving. These lights prevent accidents between cars and cars/pedestrians. Pedestrians would no longer need to run across a dangerous road and have the opportunity to safely cross at their turn. Traffic lights are also used to control the traffic to ensure the flow of the cars, adapting the lights to suit the traffic flow at various times during the day. <p>
 
-<center><img src="https://ingesantoso.files.wordpress.com/2008/08/img-2769.jpg" width="400px" alt="Phishing"></center>
 
-<p>We can see that in this picture there's a malfunction with the lights, leaving the drivers not sure whether it's suppose to be a green or red light. </p>
+	<h2>Concerns</h2>
+	<p>Even though traffic lights are used to ensure safety for drivers and pedestrians, there are still some concerns.With one small miscoordination in the lights, can result in a huge accident. For example, mis-timing of the lights going in opposing directions can lead to all the cars colliding in the center of the street. Also, if the lights aren’t timed to suit the traffic level, this can lead to build up on traffic in certain lanes, disturbing the traffic flow. Lights malfunctions can lead to concerns. For example, if a light suddenly stops working, it would put the drivers and pedestrians at risk for collisions. </p>
 
-<h2>Different Countries</h2>
- <ul>
-  <li>Australia/New Zealand: they don�t have a yellow light (green is go, flashing red is in the place of our yellow light and red is stop)</li>
-  <li>Europe: they sometimes use orange lights in replace of the yellow light. Some countries also display this light before red AND before the green light</li>
-</ul>
+	<center><img src="https://ingesantoso.files.wordpress.com/2008/08/img-2769.jpg" width="400px" alt="Phishing"></center>
 
-<p>The orientation of the lights varies in different locations in the world. Some countries have lights placed horizontally and others, vertically. For example, here in Ontario, the lights are placed vertically. However, when you drive to Quebec there lights are positioned horizontally. </p>
+	<p>We can see that in this picture there's a malfunction with the lights, leaving the drivers not sure whether it's suppose to be a green or red light. </p>
 
-<h2>Requirements</h2>
-<center><img src="https://ingesantoso.files.wordpress.com/2008/08/img-2769.jpg" width="400px" alt="Phishing"></center>
+	<h2>Different Countries</h2>
+ 	<ul>
+  	    <li>Australia/New Zealand: they don’t have a yellow light (green is go, flashing red is in the place of our yellow light and red is stop)</li><br><br>
+  	    <li>Europe: they sometimes use orange lights in replace of the yellow light. Some countries also display this light before red AND before the green light</li><br><br>
+ 	    <li>China: At some lights, there's a flashing yellow, used at times of low traffic, to indicate that pedestrians can cross with caution.</li><br><br>
+	</ul>
 
-<h4>
-Sources:  <a href="https://en.wikipedia.org/wiki/Traffic_light">Wikipedia</a>
+	<p>The orientation of the lights varies in different locations in the world. Some countries have lights placed horizontally and others, vertically. For example, here in Ontario, the lights are placed vertically. However, when you drive to Quebec there lights are positioned horizontally. </p>
 
-</h4>
+
+	<h2> Features </h2>
+	<ul>
+            <li>Walk/Don’t Walk Light:<br><br>
+	    These lights are used to ensure the safety of the pedestrians, indicating to them when it’s safe to cross. In Canada, the motion for this light is a hand (orange) to indicate it’s not safe to cross and person walking (white) to show pedestrians can cross. To display the time there’s left to cross, the lights usually display numbers or the orange hand starts to flicker.</li><br><br>
+	    <li>Pedestrian Buttons: <br><br>
+	    These buttons ensure pedestrians safety in cross busy/multi-intersection roads. In pushing this button, the traffic would soon stop and allow the person to cross the street. </li><br><br>
+            <li> Sounds: <br><br>
+            In many countries, there are sounds produced by the pedestrian lights in order to aid the visually impaired pedestrians. The variation of the sounds help differentiate the colour of the light. A common set of sounds are slow beeping when the pedestrian lights are red and a continuous buzzing sound when the lights are green.</li><br><br>
+	
+	
+	<h2> Requirements</h2>
+	
+
+
+	<h2> Code </h2>
+	<p>This is the code I used to create this traffic lights assignment.</p>
+	<pre>
+	/* Traffic Lights
+	Jieru 
+	2017-05-04
+ 	*/
+
+	int red1 = 2;
+	int red2 = 12;
+	int yellow1 = 4;
+	int yellow2 = 10;
+	int green1 = 6;
+	int green2 = 8;
+
+
+	void setup(){
+      	  pinMode(red1,OUTPUT);
+          pinMode(red2,OUTPUT);
+          pinMode(yellow1,OUTPUT);
+          pinMode(yellow2,OUTPUT);
+          pinMode(green1,OUTPUT);
+          pinMode(green2,OUTPUT);
+        }
+    
+
+	void loop(){
+      	  digitalWrite(red1, HIGH);
+          digitalWrite(green2, HIGH);
+          delay(11000);
+          digitalWrite(green2, LOW);
+          digitalWrite(yellow2, HIGH);
+      	  delay(3000);
+      	  digitalWrite(yellow2, LOW);
+     	  digitalWrite(red2, HIGH);
+      	  delay(2000);
+      	  digitalWrite(red1,LOW);
+      	  digitalWrite(green1, HIGH);
+      	  delay(11000);
+      	  digitalWrite(green1, LOW);
+      	  digitalWrite(yellow1, HIGH);
+      	  delay(3000);
+      	  digitalWrite(yellow1, LOW);
+      	  digitalWrite(red1, HIGH);
+          delay(2000);
+          digitalWrite(red2,LOW);
+  	}
+	</pre>
+
+	<h4>
+	Sources:  <a href="https://en.wikipedia.org/wiki/Traffic_light">Wikipedia</a>
+	</h4>
 
 </body>
+
 </html>
 
 
