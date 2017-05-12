@@ -78,7 +78,7 @@
 	<br>
 	
 	<h2> Requirements</h2>
-	<center><img src="Traffic.png" alt="Requirements" Style="height:800px"></center>
+	<center><img src="Traffic.PNG" alt="Requirements" Style="height:800px"></center>
 
 
 	<h2> Code </h2>
@@ -108,25 +108,25 @@
     
 
 	void loop(){
-      	  digitalWrite(red1, HIGH);
-          digitalWrite(green2, HIGH);
-          delay(11000);
-          digitalWrite(green2, LOW);
-          digitalWrite(yellow2, HIGH);
-      	  delay(3000);
-      	  digitalWrite(yellow2, LOW);
-     	  digitalWrite(red2, HIGH);
-      	  delay(2000);
-      	  digitalWrite(red1,LOW);
-      	  digitalWrite(green1, HIGH);
-      	  delay(11000);
-      	  digitalWrite(green1, LOW);
-      	  digitalWrite(yellow1, HIGH);
-      	  delay(3000);
-      	  digitalWrite(yellow1, LOW);
-      	  digitalWrite(red1, HIGH);
-          delay(2000);
-          digitalWrite(red2,LOW);
+      	  digitalWrite(red1, HIGH); //red NS light turn on for 11 seconds
+          digitalWrite(green2, HIGH); //green EW light turn on for 11 seconds
+          delay(11000); //11 seconds
+          digitalWrite(green2, LOW); //green EW light turn off 
+          digitalWrite(yellow2, HIGH); //yellow EW light turn on for 3 seconds
+      	  delay(3000); //3 seconds
+      	  digitalWrite(yellow2, LOW); //yellow EW light turn off
+     	  digitalWrite(red2, HIGH); //red EW light turn on for 2 seconds
+      	  delay(2000); //2 seconds
+      	  digitalWrite(red1,LOW); //red NS light turns off
+      	  digitalWrite(green1, HIGH); //green NS light turns on for 4 seconds
+      	  delay(4000); //4 seconds
+      	  digitalWrite(green1, LOW); //green NS light turns off
+      	  digitalWrite(yellow1, HIGH); //yellow NS light turns on for 3 seconds
+      	  delay(3000); //3 seconds
+      	  digitalWrite(yellow1, LOW); //yellow NS light turns off
+      	  digitalWrite(red1, HIGH); //red NS light turns on for 2 seconds
+          delay(2000); //2seconds
+          digitalWrite(red2,LOW); //red EW light turns off
   	}
 	</pre>
 
