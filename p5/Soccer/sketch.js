@@ -16,9 +16,9 @@ var speedX = 3;
 var speedY = 2;
 
 function setup() {
-  //canvas size
-  var myCanvas = createCanvas(640, 480);
-  myCanvas.parent('Soccer');
+  	//canvas size
+	var myCanvas = createCanvas(640, 480);
+	myCanvas.parent('Soccer');
 }
 
 function draw() {
@@ -69,20 +69,16 @@ function draw() {
 		speedX = 3;
 		speedY = 2;
 	}
-	
 	if (posX <= 0) {
 		speedX = -speedX;
 		scoreB = scoreB+1 //score on the right - how many balls he kicked to the net
 	}
-	
 	if (posY <= 0) {
 		speed = -speedY;
 	}
-	
 	//mouse variables to access player
 	if (mouseIsPressed) {
 		player();
-		
 	//checking for collisions between player and ball
 	if((abs(posX - mouseX) <30) && (abs(posY-mouseY)<30)) {
 		speedX = -round(random(1,6));
@@ -98,30 +94,24 @@ function player () {
         //head
 	fill(255, 247, 0);	
 	ellipse(mouseX, mouseY, faceSize, faceSize);
-	
 	//eyes
 	fill(0, 0, 0);
 	ellipse(mouseX-faceSize/6, mouseY-faceSize/8, faceSize/4, faceSize/4);
 	ellipse(mouseX+faceSize/6, mouseY-faceSize/8, faceSize/4, faceSize/4);
-
 	//eye white
 	fill(255,255,255);
 	ellipse(mouseX-faceSize/6, mouseY-faceSize/8, faceSize/6, faceSize/6);
 	ellipse(mouseX+faceSize/6, mouseY-faceSize/8, faceSize/6, faceSize/6);
-
 	//mouth	
 	fill (230, 0, 255);	
 	ellipse(mouseX+faceSize/30, mouseY+faceSize/4, faceSize/2, faceSize/4);
-
 	//body
 	fill(34, 0, 255);
 	rect(mouseX-faceSize/2, mouseY+faceSize/2, 30, 40);
-
 	//legs
 	fill(54, 207, 171);
 	rect(mouseX-faceSize/3, mouseY+faceSize*1.8, faceSize/4, faceSize/2);
 	rect(mouseX+faceSize/8, mouseY+faceSize*1.8, faceSize/4, faceSize/2);
-
 	//arms
 	rect(mouseX-faceSize, mouseY+faceSize, faceSize/2, faceSize/4);
 	rect(mouseX+faceSize/2, mouseY+faceSize, faceSize/2, faceSize/4);
