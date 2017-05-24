@@ -3,7 +3,7 @@ var bg;
 
 function setup() {
 	bg = loadImage("grass.png");
-	createCanvas(610,350);
+	createCanvas(900,350);
 }
 
 
