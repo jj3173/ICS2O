@@ -1,8 +1,15 @@
+var bg;
+
+
 function setup() {
-  createCanvas(400, 400);
+	bg = loadImage("grass.png");
+	createCanvas(1200,715);
 }
+
+
+
 
 function draw() {
-	ellipse(200, 200, 50, 50);
-
+	background(bg);
 }
+
