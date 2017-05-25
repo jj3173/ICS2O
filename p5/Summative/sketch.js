@@ -13,6 +13,6 @@ function setup() {
 
 function draw() {
 	background(bg);
-	gamePlayer (100, 100)
+	gamePlayer;
 }
 
