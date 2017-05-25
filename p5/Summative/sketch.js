@@ -13,6 +13,6 @@ function setup() {
 
 function draw() {
 	background(bg);
-	gamePlayer;
+	image(Luigi.png, 0, 0);
 }
 
