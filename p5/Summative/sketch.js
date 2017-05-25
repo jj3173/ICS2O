@@ -4,7 +4,7 @@ var posX = 0;
 var posY = 0;
 
 function setup() {
-	createCanvas(950,400);
+	createCanvas(970,400);
 	bg = loadImage("grass.png");
 	gamePlayer = loadImage("Mario.png");
 }
