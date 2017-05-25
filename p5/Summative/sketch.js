@@ -3,7 +3,7 @@ var gamePlayer;
 
 
 function setup() {
-	createCanvas(963,400);
+	createCanvas(950,400);
 	bg = loadImage("grass.png");
 	gamePlayer = loadImage("Mario.png");
 }
