@@ -13,6 +13,6 @@ function setup() {
 
 function draw() {
 	background(bg);
-	image(gamePlayer, 0, height/8, gamePlayer.width/8, gamePlayer.height/8);
+	image(gamePlayer, 0, height/12, gamePlayer.width/12, gamePlayer.height/12);
 }
 
