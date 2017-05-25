@@ -3,8 +3,8 @@ var gamePlayer;
 
 
 function setup() {
-	bg = loadImage("grass.png");
 	createCanvas(963,350);
+	bg = loadImage("grass.png");
 	gamePlayer = loadImage("Luigi.png");
 }
 
@@ -13,6 +13,6 @@ function setup() {
 
 function draw() {
 	background(bg);
-	image(Luigi.png, 0, 0);
+	image(gamePlayer, 0, 0);
 }
 
