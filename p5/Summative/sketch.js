@@ -5,7 +5,7 @@ var gamePlayer;
 function setup() {
 	createCanvas(963,350);
 	bg = loadImage("grass.png");
-	gamePlayer = loadImage("Luigi.png");
+	gamePlayer = loadImage("Mario.png");
 }
 
 
