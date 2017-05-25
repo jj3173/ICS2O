@@ -1,6 +1,7 @@
 var bg;
 var gamePlayer;
-
+var posX = 0;
+var posY = 0;
 
 function setup() {
 	createCanvas(950,400);
@@ -10,7 +11,7 @@ function setup() {
 
 function draw() {
 	background(bg);
-	image(gamePlayer, 0, height/4, gamePlayer.width/12, gamePlayer.height/12);
+	image(gamePlayer, posX, posY, gamePlayer.width/12, gamePlayer.height/12);
 }
 
 function keyPressed() {
