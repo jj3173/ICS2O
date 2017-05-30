@@ -23,6 +23,9 @@ function draw() {
 	text(score, 20, 30);
 	image(opponent, opX, opY, opponent.width/30, opponent.height/30);
 	opX = opX - speedX;
+	if(posX >= width) {
+	score = score + 1;
+	}
 }
 
 function keyPressed() {
