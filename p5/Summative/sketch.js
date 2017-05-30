@@ -23,7 +23,7 @@ function draw() {
 	text(score, 20, 30);
 	image(opponent, opX, opY, opponent.width/30, opponent.height/30);
 	opX = opX - speedX;
-	if(posX >= width) {
+	if(posX <= 0) {
 	score = score + 1;
 	}
 }
