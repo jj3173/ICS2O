@@ -3,7 +3,7 @@ var gamePlayer;
 var posX = 0;
 var posY = 0;
 var opX = 900;
-var opy = 100;
+var opY = 100;
 var score = 0;
 
 function setup() {
