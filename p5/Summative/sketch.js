@@ -16,7 +16,7 @@ function draw() {
 	//size of the score
 	textSize(30);
 	//Question 2 display scores
-	text(score, 20, 950);
+	text(score, 20, 900);
 }
 
 function keyPressed() {
