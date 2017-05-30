@@ -15,8 +15,8 @@ function draw() {
 	image(gamePlayer, posX, posY, gamePlayer.width/12, gamePlayer.height/12);
 	//size of the score
 	textSize(30);
-	//Question 2 display scores
-	text(score, 20, 900);
+	//display scores
+	text(score, 20, 30);
 }
 
 function keyPressed() {
