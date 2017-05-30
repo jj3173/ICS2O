@@ -4,6 +4,7 @@ var posX = 0;
 var posY = 0;
 var opX = 900;
 var opY = 100;
+var speedX = 3; 
 var score = 0;
 
 function setup() {
@@ -21,6 +22,7 @@ function draw() {
 	//display scores
 	text(score, 20, 30);
 	image(opponent, opX, opY, opponent.width/30, opponent.height/30);
+	opX = opX - speedX;
 }
 
 function keyPressed() {
