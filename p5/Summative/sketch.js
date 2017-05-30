@@ -35,7 +35,3 @@ function keyPressed() {
 		posY += 6;
 	}
 }
-function game () {
-  if(mouseIsPressed) {
-	  ellipse(mouseX, mouseY, 50 ,50);
-}
