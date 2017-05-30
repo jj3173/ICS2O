@@ -47,10 +47,6 @@ function draw() {
 	if(opX <= 0) {
 	score = score + 1;
 	}
-	if(opponent) {
-	gamePlayer();
-	
-	}
 }
 
 //control for the player using the keypad
