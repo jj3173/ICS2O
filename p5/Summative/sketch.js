@@ -1,3 +1,8 @@
+/* Summative Game
+Jieru 
+Last Edited: 2017-05-30
+*/
+
 //variables used for this game
 //background of the game
 var bg;
