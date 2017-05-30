@@ -20,7 +20,7 @@ function draw() {
 	textSize(30);
 	//display scores
 	text(score, 20, 30);
-	image(opponent, opX, opY, opponent.width/20, opponent.height/20);
+	image(opponent, opX, opY, opponent.width/30, opponent.height/30);
 }
 
 function keyPressed() {
