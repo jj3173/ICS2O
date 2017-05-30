@@ -8,6 +8,7 @@ function setup() {
 	createCanvas(965,400);
 	bg = loadImage("grass.png");
 	gamePlayer = loadImage("Mario.png");
+	opponent = loadImage ("Bullet.png");
 }
 
 function draw() {
@@ -17,6 +18,7 @@ function draw() {
 	textSize(30);
 	//display scores
 	text(score, 20, 30);
+	image(opponent, posX, posY, opponent.width/8, opponent.height/8);
 }
 
 function keyPressed() {
