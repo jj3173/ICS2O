@@ -2,6 +2,8 @@ var bg;
 var gamePlayer;
 var posX = 0;
 var posY = 0;
+var opX = 900;
+var opy = 100;
 var score = 0;
 
 function setup() {
@@ -18,7 +20,7 @@ function draw() {
 	textSize(30);
 	//display scores
 	text(score, 20, 30);
-	image(opponent, posX, posY, opponent.width/8, opponent.height/8);
+	image(opponent, opX, opY, opponent.width/20, opponent.height/20);
 }
 
 function keyPressed() {
