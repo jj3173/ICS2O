@@ -2,7 +2,7 @@ var bg;
 var gamePlayer;
 var posX = 0;
 var posY = 0;
-var opX = 900;
+var opX = 965;
 var opY = 100;
 var speedX = 3; 
 var score = 0;
