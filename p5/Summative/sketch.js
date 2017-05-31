@@ -20,7 +20,7 @@ var speedX = 3;
 var score = 0;
 
 function preload() {
-	mySound = loadSound ();
+	mySound = loadSound ("MarioMusic.mp3");
 }
 
 function setup() {
