@@ -47,7 +47,7 @@ function draw() {
 	if(posX <= 0) {
 	score = score + 1;
 	}
-	if(opX<=0) {
+	if(opX<=-100) {
 	opX = 965
 	}
 	image(opponent, opX, opY, opponent.width/30, opponent.height/30);
