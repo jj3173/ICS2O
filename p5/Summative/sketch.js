@@ -19,10 +19,16 @@ var speedX = 3;
 //the score the player obtains, recorded by how long they last before getting hit by the opponent
 var score = 0;
 
+function preload() {
+	mySound = loadSound ();
+}
+
 function setup() {
 	//the size of the game screen
 	createCanvas(965,400);
 	//loading images needed for this game
+	mySound.setVolume(0.1);
+	mySound.play()
 	//background
 	bg = loadImage("grass.png");
 	//player - Mario
