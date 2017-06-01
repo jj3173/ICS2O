@@ -1,6 +1,6 @@
 /* Summative Game
 Jieru 
-Last Edited: 2017-05-30
+Last Edited: 2017-06-01
 */
 
 //variables used for this game
@@ -56,8 +56,7 @@ function draw() {
 	if(opX<=-100) {
 	opX = 965
 	}
-	image(opponent, opX, opY, opponent.width/30, opponent.height/30);
-	
+	image(opponent, opX, opY, opponent.width/30, opponent.height/30);	
 }
 
 //control for the player using the keypad
