@@ -46,7 +46,7 @@ function draw() {
 	image(gamePlayer, posX, posY, gamePlayer.width/12, gamePlayer.height/12);
 	if(status==0){
 	//start button
-	text("Start", 50, 50); 
+	text("Start", 100, 100, 480, 200); 
 	}
 	else {
 		//size of the score
