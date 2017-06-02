@@ -40,14 +40,14 @@ function setup() {
 }
 
 function draw() {
-	 if(status==0){
-	text("Start", 30, 30); //start button
+	if(status==0){
+	text("Start", 100, 100); //start button
+	//grass and sky background of the game
+	background(bg);
+	//position and size of Mario
+	image(gamePlayer, posX, posY, gamePlayer.width/12, gamePlayer.height/12);
 	}
 	else {
-		//grass and sky background of the game
-		background(bg);
-		//position and size of Mario
-		image(gamePlayer, posX, posY, gamePlayer.width/12, gamePlayer.height/12);
 		//size of the score
 		textSize(30);
 		//display scores
