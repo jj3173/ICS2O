@@ -40,28 +40,33 @@ function setup() {
 }
 
 function draw() {
-	//grass and sky background of the game
-	background(bg);
-	//position and size of Mario
-	image(gamePlayer, posX, posY, gamePlayer.width/12, gamePlayer.height/12);
-	//size of the score
-	textSize(30);
-	//display scores
-	text(score, 20, 30);
-	//position and size of the Bullet
-	image(opponent, opX, opY, opponent.width/30, opponent.height/30);
-	//speed the Bullet is moving
-	opX = opX - speedX;
-	if(opX >= -100) {
-	score = score + 1;
+	 if(status==0){
+	text("Start", 30, 30); //start button
 	}
+	else {
+		//grass and sky background of the game
+		background(bg);
+		//position and size of Mario
+		image(gamePlayer, posX, posY, gamePlayer.width/12, gamePlayer.height/12);
+		//size of the score
+		textSize(30);
+		//display scores
+		text(score, 20, 30);
+		//position and size of the Bullet
+		image(opponent, opX, opY, opponent.width/30, opponent.height/30);
+		//speed the Bullet is moving
+		opX = opX - speedX;
+		if(opX >= -100) {
+		score = score + 1;
+		}
+	}	
 	//check for collision
-  	if((abs(posX - opX) <30) && (abs(posY-opY)<30)) {
+  	//if((abs(posX - opX) <30) && (abs(posY-opY)<30)) {
 	//size of words
-	textSize(30);
+	//textSize(30);
 	//display 
-	text(GAME OVER, 20, 30);
-	}
+	//text(GAME OVER, 20, 30);
+	//}
 	//if the Bullet leaves the screen, go back to the right side of the screen and re-fire at a random location between 0 and 400
 	if(opX<=-100) {
 	//return to right side of screeen
