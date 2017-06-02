@@ -56,12 +56,11 @@ function draw() {
 	score = score + 1;
 	}
 	//check for collision
-	if (opX = posX) {
+  	if((abs(posX - opX) <30) && (abs(posY-opY)<30)) {
+	//size of words
 	textSize(30);
-	text(GAME OVER, 250, 250);
-	}
-	else{
-	//stay the same
+	//display 
+	text(GAME OVER, 20, 30);
 	}
 	//if the Bullet leaves the screen, go back to the right side of the screen and re-fire at a random location between 0 and 400
 	if(opX<=-100) {
