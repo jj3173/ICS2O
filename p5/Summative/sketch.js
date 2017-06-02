@@ -52,7 +52,7 @@ function draw() {
 	image(opponent, opX, opY, opponent.width/30, opponent.height/30);
 	//speed the Bullet is moving
 	opX = opX - speedX;
-	if(posX <= 0) {
+	if(opX <= 0) {
 	score = score + 1;
 	}
 	if(opX<=-100) {
