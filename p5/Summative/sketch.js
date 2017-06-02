@@ -20,16 +20,16 @@ var speedX = 3;
 var score = 0;
 
 //load the background music for the game
-function preload() {
-	mySound = loadSound ("MarioMusic.mp3");
-}
+//function preload() {
+	//mySound = loadSound ("MarioMusic.mp3");
+//}
 
 function setup() {
 	//the size of the game screen
 	createCanvas(965,400);
 	//play the background music for the game
-	mySound.setVolume(0.1);
-	mySound.play();
+	//mySound.setVolume(0.1);
+	//mySound.play();
 	//loading images needed for this game
 	//background
 	bg = loadImage("grass.png");
