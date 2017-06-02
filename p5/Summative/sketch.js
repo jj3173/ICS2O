@@ -15,7 +15,7 @@ var posY = 0;
 var opX = 965;
 var opY = 100;
 //the speed the opponent is moving at
-var speedX = random(2,7); 
+var speedX = 4; 
 //the score the player obtains, recorded by how long they last before getting hit by the opponent
 var score = 0;
 
