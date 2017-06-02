@@ -15,7 +15,7 @@ var posY = 0;
 var opX = 965;
 var opY = 100;
 //the speed the opponent is moving at
-var speedX = 3; 
+var speedX = 4; 
 //the score the player obtains, recorded by how long they last before getting hit by the opponent
 var score = 0;
 
@@ -65,18 +65,18 @@ function draw() {
 function keyPressed() {
 	//if the right arrow is pressed, Mario will move to the right
 	if (keyCode == RIGHT_ARROW) {
-		posX += 6;
+		posX += 8;
 	}
 	//if the left arrow is pressed, Mario will move to the left
 	else if (keyCode == LEFT_ARROW) {
-		posX -= 6;
+		posX -= 8;
 	}
 	//if the up arrow is pressed, Mario will move up
 	else if (keyCode == UP_ARROW) {
-		posY -= 6;
+		posY -= 8;
 	}
 	//if the down arrow is pressed, Mario will move down
 	else if (keyCode == DOWN_ARROW) {
-		posY += 6;
+		posY += 8;
 	}
 }
