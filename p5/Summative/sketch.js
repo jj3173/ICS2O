@@ -55,8 +55,11 @@ function draw() {
 	if(opX >= -100) {
 	score = score + 1;
 	}
+	//if the Bullet leaves the screen, go back to the right side of the screen and re-fire at a random location between 0 and 400
 	if(opX<=-100) {
+	//return to right side of screeen
 	opX = 965
+	//Y location of Bullet random but between 0 and 400
 	opY = random(0, 400);
 	}
 	image(opponent, opX, opY, opponent.width/30, opponent.height/30);	
