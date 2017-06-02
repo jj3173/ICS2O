@@ -57,6 +57,7 @@ function draw() {
 	}
 	if(opX<=-100) {
 	opX = 965
+	opY = random(0, 400);
 	}
 	image(opponent, opX, opY, opponent.width/30, opponent.height/30);	
 }
