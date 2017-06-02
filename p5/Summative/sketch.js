@@ -55,9 +55,10 @@ function draw() {
 	if(opX >= -100) {
 	score = score + 1;
 	}
+	//check for collision
 	if (opX = posX) {
 	textSize(30);
-	text( GAME OVER, 250, 250);
+	text(GAME OVER, 250, 250);
 	}
 	else{
 	//stay the same
