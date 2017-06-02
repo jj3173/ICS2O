@@ -63,6 +63,7 @@ function draw() {
 	opX = 965
 	//Y location of Bullet random but between 0 and 400
 	opY = random(0, 400);
+	speedX = random(2, 8);
 	}
 	image(opponent, opX, opY, opponent.width/30, opponent.height/30);	
 }
