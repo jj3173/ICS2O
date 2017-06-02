@@ -15,7 +15,7 @@ var posY = 0;
 var opX = 965;
 var opY = 100;
 //the speed the opponent is moving at
-var speedX = 4; 
+var speedX = random(2,7); 
 //the score the player obtains, recorded by how long they last before getting hit by the opponent
 var score = 0;
 
@@ -54,6 +54,8 @@ function draw() {
 	opX = opX - speedX;
 	if(opX >= -100) {
 	score = score + 1;
+	}
+	if (Bullet) {
 	}
 	//if the Bullet leaves the screen, go back to the right side of the screen and re-fire at a random location between 0 and 400
 	if(opX<=-100) {
