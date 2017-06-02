@@ -4,6 +4,7 @@ Last Edited: 2017-06-01
 */
 
 //variables used for this game
+var status = 0;
 //background of the game
 var bg;
 //mario
