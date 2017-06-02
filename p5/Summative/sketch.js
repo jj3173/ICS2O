@@ -47,7 +47,7 @@ function draw() {
 	if(status==0){
 	//start button
 	textSize(100);
-	text("START", 350, 200); 
+	text("START", 325, 200); 
 	}
 	else {
 		//size of the score
