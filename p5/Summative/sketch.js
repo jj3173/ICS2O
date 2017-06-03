@@ -50,9 +50,9 @@ function draw() {
 	//if the mouse isn't clicked ...
 	if(status==0){
 		//position and size of the title
-		image(title, 325, 100);
+		image(title, 325, 100, title.width*2, title.height*2);
 		//start button
-		textSize(100);
+		textSize(75);
 		text("START", 325, 350); 
 	}
 	//if the mouse is clicked ...
