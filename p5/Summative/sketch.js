@@ -38,6 +38,8 @@ function setup() {
 	gamePlayer = loadImage("Mario.png");
 	//opponent - bullet
 	opponent = loadImage ("Bullet.png");
+	//game name 
+	title = loadImage ("TitleGame.png");
 }
 
 function draw() {
@@ -47,9 +49,11 @@ function draw() {
 	image(gamePlayer, posX, posY, gamePlayer.width/12, gamePlayer.height/12);
 	//if the mouse isn't clicked ...
 	if(status==0){
+		//position and size of the title
+		image(title, 325, 100, opponent.width/30, opponent.height/30);
 		//start button
 		textSize(100);
-		text("START", 325, 200); 
+		text("START", 325, 350); 
 	}
 	//if the mouse is clicked ...
 	else {
