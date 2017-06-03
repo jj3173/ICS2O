@@ -10,7 +10,7 @@ var bg;
 //mario
 var gamePlayer;
 //mario's position on the screen at the start
-var posX = 0;
+var posX = 300;
 var posY = 0;
 //position of the opponents at the start of the game
 var opX = 965;
