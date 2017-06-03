@@ -10,8 +10,8 @@ var bg;
 //mario
 var gamePlayer;
 //mario's position on the screen at the start
-var posX = 300;
-var posY = 0;
+var posX = 0;
+var posY = 150;
 //position of the opponents at the start of the game
 var opX = 965;
 var opY = 100;
@@ -50,7 +50,7 @@ function draw() {
 	//if the mouse isn't clicked ...
 	if(status==0){
 		//position and size of the title
-		image(title, 325, 100, title.width*2, title.height*2);
+		image(title, 275, 75, title.width*2, title.height*2);
 		//start button
 		textSize(75);
 		text("START", 325, 350); 
