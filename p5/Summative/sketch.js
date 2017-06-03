@@ -1,6 +1,6 @@
 /* Summative Game
 Jieru 
-Last Edited: 2017-06-01
+Last Edited: 2017-06-03
 */
 
 //variables used for this game
@@ -84,7 +84,7 @@ function draw() {
 }
 
 function mouseClicked() {
-	 if ((mouseX < 965) && (mouseY < 400) { //if the mouse is clicked, the game begins
+	 if ((mouseX < 965) && (mouseY < 400)) { //if the mouse is clicked, the game begins
 	 status = 1;	
 	 }
 }
