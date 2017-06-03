@@ -45,11 +45,13 @@ function draw() {
 	background(bg);
 	//position and size of Mario
 	image(gamePlayer, posX, posY, gamePlayer.width/12, gamePlayer.height/12);
+	//if the mouse isn't clicked ...
 	if(status==0){
-	//start button
-	textSize(100);
-	text("START", 325, 200); 
+		//start button
+		textSize(100);
+		text("START", 325, 200); 
 	}
+	//if the mouse is clicked ...
 	else {
 		//size of the score
 		textSize(30);
@@ -72,20 +74,22 @@ function draw() {
 	//}
 	//if the Bullet leaves the screen, go back to the right side of the screen and re-fire at a random location between 0 and 400
 	if(opX<=-100) {
-	//return to right side of screeen
-	opX = 965
-	//Y location of Bullet random but between 0 and 400
-	opY = random(0, 400);
-	//change the speed of Bullet randomly between 2 and 10
-	speedX = random(2, 10);
+		//return to right side of screeen
+		opX = 965
+		//Y location of Bullet random but between 0 and 400
+		opY = random(0, 400);
+		//change the speed of Bullet randomly between 2 and 10
+		speedX = random(2, 10);
 	}
 	//re-create the image
 	image(opponent, opX, opY, opponent.width/30, opponent.height/30);	
 }
 
+//controls the mouse
 function mouseClicked() {
-	 if ((mouseX < 965) && (mouseY < 400)) { //if the mouse is clicked, the game begins
-	 status = 1;	
+	 //if the mouse clicks anywhere on the screen, the game will begin
+	 if ((mouseX < 965) && (mouseY < 400)) { 
+	 	status = 1;	
 	 }
 }
 
