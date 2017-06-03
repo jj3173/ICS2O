@@ -83,6 +83,12 @@ function draw() {
 	image(opponent, opX, opY, opponent.width/30, opponent.height/30);	
 }
 
+function mouseClicked() {
+	 if ((mouseX < 965) && (mouseY < 400) { //if the mouse is clicked, the game begins
+	 status = 1;	
+	 }
+}
+
 //control for the player using the keypad
 function keyPressed() {
 	//if the right arrow is pressed, Mario will move to the right
