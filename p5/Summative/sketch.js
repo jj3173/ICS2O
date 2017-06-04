@@ -19,18 +19,20 @@ var opY = 100;
 var speedX = 4; 
 //the score the player obtains, recorded by how long they last before getting hit by the opponent
 var score = 0;
+//sound
+var mySound;
 
 //load the background music for the game
-//function preload() {
-	//mySound = loadSound ("MarioMusic.mp3");
-//}
+function preload() {
+	mySound = loadSound ('MarioMusic.mp3');
+}
 
 function setup() {
 	//the size of the game screen
 	createCanvas(965,400);
 	//play the background music for the game
-	//mySound.setVolume(0.1);
-	//mySound.play();
+	mySound.setVolume(0.1);
+	mySound.play();
 	//loading images needed for this game
 	//background
 	bg = loadImage("grass.png");
