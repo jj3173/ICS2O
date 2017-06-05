@@ -87,8 +87,8 @@ function draw() {
 	image(opponent, opX, opY, opponent.width/30, opponent.height/30);
 	
 	//collision 
-	if ((abs(posX-opX)<50) && (abs(posY-opY)<50)) {
-		image(gameOver, posX, posY, gameOver.width/4, gameOver.height/4);
+	if ((abs(posX-opX)<75) && (abs(posY-opY)<75)) {
+		image(gameOver, posX, posY, gameOver, gameOver);
 	}	
 }
 
