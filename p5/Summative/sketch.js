@@ -82,7 +82,13 @@ function draw() {
 		speedX = random(2, 10);
 	}
 	//re-create the image
-	image(opponent, opX, opY, opponent.width/30, opponent.height/30);	
+	image(opponent, opX, opY, opponent.width/30, opponent.height/30);
+	
+	//collision 
+	if ((abs(posX-opX)<30) && (abs(posY-opY)<30)) {
+		textSize(40);
+		text("END", 325, 350); 
+	}	
 }
 
 //controls the mouse
