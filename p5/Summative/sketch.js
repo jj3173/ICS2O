@@ -43,6 +43,8 @@ function setup() {
 	opponent = loadImage ("Bullet.png");
 	//game name 
 	title = loadImage ("TitleGame.png");
+	//game over
+	gameOver = loadImage ("GameOver.png");
 }
 
 function draw() {
@@ -85,9 +87,8 @@ function draw() {
 	image(opponent, opX, opY, opponent.width/30, opponent.height/30);
 	
 	//collision 
-	if ((abs(posX-opX)<30) && (abs(posY-opY)<30)) {
-		textSize(40);
-		text("END", 325, 350); 
+	if ((abs(posX-opX)<50) && (abs(posY-opY)<50)) {
+		image(gameOver, posX, posY, gameOver.width/4, gameOver.height/4);
 	}	
 }
 
