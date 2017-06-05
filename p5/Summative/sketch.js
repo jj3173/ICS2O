@@ -78,8 +78,8 @@ function draw() {
 	if(opX<=-100) {
 		//return to right side of screeen
 		opX = 965
-		//Y location of Bullet random but between 0 and 400
-		opY = random(0, 400);
+		//Y location of Bullet random but between 0 and 380
+		opY = random(0, 380);
 		//change the speed of Bullet randomly between 2 and 10
 		speedX = random(2, 10);
 	}
@@ -88,7 +88,7 @@ function draw() {
 	
 	//collision 
 	if ((abs(posX-opX)<20) && (abs(posY-opY)<20)) {
-		image(gameOver, 0, 0, gameOver.width/1.65, gameOver.height/1.8);
+		image(gameOver, 0, 0, gameOver.width/1.55, gameOver.height/1.8);
 	}	
 }
 
