@@ -90,6 +90,9 @@ function draw() {
 	if ((abs(posX-opX)<20) && (abs(posY-opY)<20)) {
 		background(gameOver);
 	}	
+	else {
+	//stay the same
+	}
 }
 
 //controls the mouse
