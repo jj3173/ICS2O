@@ -1,6 +1,6 @@
 /* Summative Game
 Jieru 
-Last Edited: 2017-06-03
+Last Edited: 2017-06-05
 */
 
 //variables used for this game
@@ -78,18 +78,20 @@ function draw() {
 	if(opX<=-100) {
 		//return to right side of screeen
 		opX = 965
-		//Y location of Bullet random but between 0 and 380
-		opY = random(0, 380);
+		//Y location of Bullet random but between 0 and 370
+		opY = random(0, 370);
 		//change the speed of Bullet randomly between 2 and 10
 		speedX = random(2, 10);
 	}
 	//re-create the image
 	image(opponent, opX, opY, opponent.width/30, opponent.height/30);
 	
-	//collision 
+	//checking for collision between Bullet and Mario
+	//if it hits, the game is over 
 	if ((abs(posX-opX)<80) && (abs(posY-opY)<100)) {
 		background(gameOver);
 	}	
+	//if not everything stays the same
 	else {
 	//stay the same
 	}
