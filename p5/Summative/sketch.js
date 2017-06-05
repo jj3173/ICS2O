@@ -90,6 +90,7 @@ function draw() {
 	//if it hits, the game is over 
 	if ((abs(posX-opX)<80) && (abs(posY-opY)<120)) {
 		background(gameOver);
+		speed = 0;		
 	}	
 	//if not everything stays the same
 	else {
