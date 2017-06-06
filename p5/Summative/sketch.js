@@ -86,9 +86,14 @@ function draw() {
 	//re-create the image
 	image(opponent, opX, opY, opponent.width/30, opponent.height/30);
 	
+	//if the player reaches a score of 500
+	if(score >= 500) { 
+			  
+	} 
+	
 	//checking for collision between Bullet and Mario
 	//if it hits, the game is over 
-	if ((abs(posX-opX)<80) && (abs(posY-opY)<120)) {
+	if ((abs(posX-opX)<80) && (abs(posY-opY)<100)) {
 		background(gameOver);
 		speedX = 0;	
 		
