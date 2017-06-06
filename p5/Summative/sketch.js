@@ -12,15 +12,20 @@ var gamePlayer;
 //mario's position on the screen at the start
 var posX = 0;
 var posY = 150;
-//position of the opponents at the start of the game
+//position of the Bullet at the start of the game
+var opponent;
 var opX = 965;
 var opY = 100;
-//the speed the opponent is moving at
+//the speed the Bullet is moving at
 var speedX = 4; 
 //the score the player obtains, recorded by how long they last before getting hit by the opponent
 var score = 0;
 //sound
 var mySound;
+//game title page
+var title;
+//game over display
+var gameOver;
 
 //load the background music for the game
 function preload() {
