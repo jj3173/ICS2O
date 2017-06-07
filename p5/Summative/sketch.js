@@ -88,8 +88,6 @@ function draw() {
 		//change the speed of Bullet randomly between 2 and 10
 		speedX = random(2, 10);
 	}
-	//re-create the image
-	image(opponent, opX, opY, opponent.width/30, opponent.height/30);
 	
 	//if the player reaches a score of 500
 	if(score >= 500) { 
