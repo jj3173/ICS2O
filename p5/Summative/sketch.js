@@ -116,7 +116,7 @@ function draw() {
 		speedX = 0;	
 	}	
 	//checking for collision between Fireball and Mario
-	if ((abs(fireX-opX)<70) && (abs(fireY-opY)<80)) {
+	if ((abs(posX-fireX)<70) && (abs(posY-fireY)<80)) {
 		background(gameOver);
 		speedX = 0;	
 	}
