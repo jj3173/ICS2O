@@ -97,7 +97,7 @@ function draw() {
 	
 	//if the player reaches a score of 500
 	if(score >= 500) { 
-		image(fireball, fireX, fireY, fireball.width/2, fireball.height/2);
+		image(fireball, fireX, fireY);
 	  	fireX = fireX - speedX;
 	} 
 	
