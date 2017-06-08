@@ -92,12 +92,12 @@ function draw() {
 		//Y location of Bullet random but between 0 and 370
 		opY = random(0, 370);
 		//change the speed of Bullet randomly between 2 and 10
-		speedX = random(2, 10);
+		speedX = random(4, 12);
 	}
 	
 	//if the player reaches a score of 500
 	if(score >= 500) { 
-	  	fireX = fireX - speedX
+	  	fireX = fireX - speedX;
 	} 
 	
 	//checking for collision between Bullet and Mario
@@ -124,18 +124,18 @@ function mouseClicked() {
 function keyPressed() {
 	//if the right arrow is pressed, Mario will move to the right
 	if (keyCode == RIGHT_ARROW) {
-		posX += 8;
+		posX += 10;
 	}
 	//if the left arrow is pressed, Mario will move to the left
 	else if (keyCode == LEFT_ARROW) {
-		posX -= 8;
+		posX -= 10;
 	}
 	//if the up arrow is pressed, Mario will move up
 	else if (keyCode == UP_ARROW) {
-		posY -= 8;
+		posY -= 10;
 	}
 	//if the down arrow is pressed, Mario will move down
 	else if (keyCode == DOWN_ARROW) {
-		posY += 8;
+		posY += 10;
 	}
 }
