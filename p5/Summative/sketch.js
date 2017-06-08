@@ -96,7 +96,7 @@ function draw() {
 	
 	//checking for collision between Bullet and Mario
 	//if it hits, the game is over 
-	if ((abs(posX-opX)<60) && (abs(posY-opY)<80)) {
+	if ((abs(posX-opX)<70) && (abs(posY-opY)<90)) {
 		background(gameOver);
 		speedX = 0;	
 	}	
