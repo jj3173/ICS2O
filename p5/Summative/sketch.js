@@ -99,8 +99,8 @@ function draw() {
 	if ((abs(posX-opX)<80) && (abs(posY-opY)<100)) {
 		background(gameOver);
 		speedX = 0;	
-		posX = 0;
-		posY = 0;
+		posX = -1000;
+		posY = -1000;
 		
 	}	
 	//if not everything stays the same
