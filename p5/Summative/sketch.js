@@ -16,6 +16,10 @@ var posY = 150;
 var bullet;
 var opX = 965;
 var opY = 100;
+//postion of the Fireball that comes into play after the player reaches 500 on the score
+var fireball;
+var fireX = 1000;
+var fireY = 100;
 //the speed the Bullet is moving at
 var speedX = 4; 
 //the score the player obtains, recorded by how long they last before getting hit by the Bullet/Fireball
@@ -46,6 +50,8 @@ function setup() {
 	gamePlayer = loadImage("Mario.png");
 	//Bullet
 	bullet = loadImage ("Bullet.png");
+	//Fireball
+	fireball = loadImage ("Fireball.png");
 	//game name 
 	title = loadImage ("TitleGame.png");
 	//game over
@@ -91,7 +97,7 @@ function draw() {
 	
 	//if the player reaches a score of 500
 	if(score >= 500) { 
-				  
+	  	fireX = fireX - speedX
 	} 
 	
 	//checking for collision between Bullet and Mario
