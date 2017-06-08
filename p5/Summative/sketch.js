@@ -13,12 +13,12 @@ var gamePlayer;
 var posX = 0;
 var posY = 150;
 //position of the Bullet at the start of the game
-var opponent;
+var bullet;
 var opX = 965;
 var opY = 100;
 //the speed the Bullet is moving at
 var speedX = 4; 
-//the score the player obtains, recorded by how long they last before getting hit by the opponent
+//the score the player obtains, recorded by how long they last before getting hit by the Bullet/Fireball
 var score = 0;
 //sound
 var mySound;
@@ -44,8 +44,8 @@ function setup() {
 	bg = loadImage("grass.png");
 	//player - Mario
 	gamePlayer = loadImage("Mario.png");
-	//opponent - bullet
-	opponent = loadImage ("Bullet.png");
+	//Bullet
+	bullet = loadImage ("Bullet.png");
 	//game name 
 	title = loadImage ("TitleGame.png");
 	//game over
@@ -72,7 +72,7 @@ function draw() {
 		//display scores
 		text(score, 20, 30);
 		//position and size of the Bullet
-		image(opponent, opX, opY, opponent.width/30, opponent.height/30);
+		image(bullet, opX, opY, bullet.width/30, bullet.height/30);
 		//speed the Bullet is moving
 		opX = opX - speedX;
 		if(opX >= -100) {
@@ -91,12 +91,12 @@ function draw() {
 	
 	//if the player reaches a score of 500
 	if(score >= 500) { 
-			  
+				  
 	} 
 	
 	//checking for collision between Bullet and Mario
 	//if it hits, the game is over 
-	if ((abs(posX-opX)<70) && (abs(posY-opY)<85)) {
+	if ((abs(posX-opX)<70) && (abs(posY-opY)<80)) {
 		background(gameOver);
 		speedX = 0;	
 	}	
