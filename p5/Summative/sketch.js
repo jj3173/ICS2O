@@ -97,8 +97,16 @@ function draw() {
 	
 	//if the player reaches a score of 500
 	if(score >= 500) { 
-		image(fireball, fireX, fireY);
+		image(fireball, fireX, fireY, fireball.width/1.5, fireball.height/1.5);
 	  	fireX = fireX - speedX;
+		if(fireX<=-100) {
+			//return to right side of screeen
+			fireX = 965
+			//Y location of Bullet random but between 0 and 370
+			fireY = random(0, 370);
+			//change the speed of Bullet randomly between 2 and 10
+			speedX = random(4, 12);
+		}
 	} 
 	
 	//checking for collision between Bullet and Mario
