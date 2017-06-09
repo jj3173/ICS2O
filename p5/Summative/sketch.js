@@ -85,9 +85,6 @@ function draw() {
 		image(bullet, opX, opY, bullet.width/30, bullet.height/30);
 		//speed the Bullet is moving
 		opX = opX - speedX;
-		if(opX >= -100) {
-		score = score + 1;
-		}
 	}	
 	//if the Bullet leaves the screen, go back to the right side of the screen and re-fire at a random location between 0 and 400
 	if(opX<=-100) {
