@@ -107,8 +107,8 @@ function draw() {
 		score = score + 1;
 	}
 	
-	//if the player reaches a score of 10
-	if(score >= 10) { 
+	//if the player reaches a score of 5
+	if(score >= 5) { 
 		image(fireball, fireX, fireY, fireball.width/1.5, fireball.height/1.5);
 	  	fireX = fireX - speedX;
 		if(fireX<=-100) {
