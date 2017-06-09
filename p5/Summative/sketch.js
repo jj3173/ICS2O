@@ -128,7 +128,7 @@ function draw() {
 	if ((abs(posX-opX)<70) && (abs(posY-opY)<80)) {
 		background(gameOver);
 		textSize(75);
-		text("Your score is " + score + "!", 145, 225)
+		text("Your score is " + score + "!", 145, 225);
 		speedX = 0;	
 		posX = opX = fireX;
 		posY = opY = fireY;
