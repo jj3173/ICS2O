@@ -137,7 +137,7 @@ function draw() {
 		speedX = 0;	
 	}
 	//checking for collision between Mario and the donut
-	if ((abs(posX-donutX)<50) && (abs(posY-donutY)<100)) {
+	if ((abs(posX-donutX)<60) && (abs(posY-donutY)<90)) {
 		score = score + 2;
 	}
 }
