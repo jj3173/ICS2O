@@ -59,6 +59,10 @@ function setup() {
 }
 
 function draw() {
+	//if the music ends, restart
+	if ((mySound.isPlaying() == false) && (userStop == false)) {  
+    	mySoun.play();
+ 	}
 	//grass and sky background of the game
 	background(bg);
 	//position and size of Mario
