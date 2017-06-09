@@ -139,6 +139,8 @@ function draw() {
 	//checking for collision between Mario and the donut
 	if ((abs(posX-donutX)<60) && (abs(posY-donutY)<90)) {
 		score = score + 2;
+		donutX = random(500, 925);
+		donutY = random(50, 350);
 	}
 }
 
