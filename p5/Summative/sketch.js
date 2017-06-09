@@ -168,7 +168,7 @@ function keyPressed() {
 	}
 	//if the up arrow is pressed, Mario will move up
 	else if (keyCode == UP_ARROW) {
-		posY -= 12;
+		posY -= 30;
 	}
 	//if the down arrow is pressed, Mario will move down
 	else if (keyCode == DOWN_ARROW) {
