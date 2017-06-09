@@ -130,8 +130,8 @@ function draw() {
 		textSize(75);
 		text("Your score is " + score + "!", 145, 225)
 		speedX = 0;	
-		posX = opX;
-		posY = opY;
+		posX = opX = fireX;
+		posY = opY = fireY;
 	}	
 	//checking for collision between Fireball and Mario
 	if ((abs(posX-fireX)<70) && (abs(posY-fireY)<80)) {
@@ -166,8 +166,9 @@ function keyPressed() {
 	else if (keyCode == LEFT_ARROW) {
 		posX -= 12;
 	}
-	//if the up arrow is pressed, Mario will move up
+	//if the up arrow is pressed, Mario will move up 
 	else if (keyCode == UP_ARROW) {
+		//when the up button is pressed he will jump
 		posY -= 100;
 	}
 	//if the down arrow is pressed, Mario will move down
