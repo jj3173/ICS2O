@@ -21,7 +21,7 @@ var fireball;
 var fireX = 1000;
 var fireY = 100;
 //the speed the Bullet is moving at
-var speedX = 4; 
+var speedX = 6; 
 //the score the player obtains, recorded by how many opponents he dodges
 var score = 0;
 //sound
