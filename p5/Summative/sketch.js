@@ -136,10 +136,6 @@ function draw() {
 		background(gameOver);
 		speedX = 0;	
 	}
-	//if not everything stays the same
-	else {
-	//stay the same
-	}
 }
 
 //controls the mouse
