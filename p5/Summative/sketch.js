@@ -94,6 +94,7 @@ function draw() {
 		opY = random(0, 370);
 		//change the speed of Bullet randomly between 2 and 10
 		speedX = random(4, 12);
+		score = score + 1;
 	}
 	
 	//if the player reaches a score of 500
