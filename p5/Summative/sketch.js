@@ -62,7 +62,7 @@ function setup() {
 	//game over
 	gameOver = loadImage ("GameOver.png");
 	//donut image - bonus to player's score
-	gameOver = loadImage ("Donut.png");
+	donut = loadImage ("Donut.png");
 }
 
 function draw() {
