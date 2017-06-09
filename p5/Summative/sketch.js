@@ -22,7 +22,7 @@ var fireX = 1000;
 var fireY = 100;
 //the speed the Bullet is moving at
 var speedX = 4; 
-//the score the player obtains, recorded by how long they last before getting hit by the Bullet/Fireball
+//the score the player obtains, recorded by how many opponents he dodges
 var score = 0;
 //sound
 var mySound;
@@ -94,11 +94,12 @@ function draw() {
 		opY = random(0, 370);
 		//change the speed of Bullet randomly between 2 and 10
 		speedX = random(4, 12);
+		//if the Bullet goes off the screen, a point will be added
 		score = score + 1;
 	}
 	
-	//if the player reaches a score of 500
-	if(score >= 500) { 
+	//if the player reaches a score of 15
+	if(score >= 15) { 
 		image(fireball, fireX, fireY, fireball.width/1.5, fireball.height/1.5);
 	  	fireX = fireX - speedX;
 		if(fireX<=-100) {
@@ -108,6 +109,8 @@ function draw() {
 			fireY = random(0, 370);
 			//change the speed of Bullet randomly between 2 and 10
 			speedX = random(4, 12);
+			//if the Fireball goes off the screen, a point will be added
+			score = score + 1;
 		}
 	} 
 	
