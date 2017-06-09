@@ -107,8 +107,8 @@ function draw() {
 		score = score + 1;
 	}
 	
-	//if the player reaches a score of 5
-	if(score >= 5) { 
+	//if the player reaches a score of 10
+	if(score >= 10) { 
 		image(fireball, fireX, fireY, fireball.width/1.5, fireball.height/1.5);
 	  	fireX = fireX - speedX;
 		if(fireX<=-100) {
@@ -137,9 +137,11 @@ function draw() {
 		speedX = 0;	
 	}
 	//checking for collision between Mario and the donut
-	if ((abs(posX-donutX)<60) && (abs(posY-donutY)<90)) {
+	if ((abs(posX-donutX)<65) && (abs(posY-donutY)<90)) {
+		//if Mario eats the donut, he will receive 2 bonus scores
 		score = score + 2;
-		donutX = random(500, 925);
+		//move the donut to a random spot between given numbers
+		donutX = random(400, 925);
 		donutY = random(50, 350);
 	}
 }
