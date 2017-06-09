@@ -1,6 +1,6 @@
 /* Summative Game
 Jieru 
-Last Edited: 2017-06-05
+Last Edited: 2017-06-09
 */
 
 //variables used for this game
