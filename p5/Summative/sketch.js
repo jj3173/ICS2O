@@ -131,7 +131,7 @@ function draw() {
 		speedX = 0;	
 		posX = opX;
 		posY = opY;
-		text("Your score is " + score + "!", 145, 225);
+		text("Your score is " + score + "!", 155, 225);
 	}	
 	//checking for collision between Fireball and Mario
 	if ((abs(posX-fireX)<70) && (abs(posY-fireY)<80)) {
@@ -139,7 +139,7 @@ function draw() {
 		speedX = 0;	
 		posX = fireX;
 		posY = fireY;
-		text("Your score is " + score + "!", 145, 225);
+		text("Your score is " + score + "!", 155, 225);
 	}
 	//checking for collision between Mario and the donut
 	if ((abs(posX-donutX)<65) && (abs(posY-donutY)<90)) {
