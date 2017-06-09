@@ -130,8 +130,8 @@ function draw() {
 		textSize(75);
 		text("Your score is " + score + "!", 145, 225)
 		speedX = 0;	
-		posX = opX
-		posY = opY
+		posX = opX;
+		posY = opY;
 	}	
 	//checking for collision between Fireball and Mario
 	if ((abs(posX-fireX)<70) && (abs(posY-fireY)<80)) {
