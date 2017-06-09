@@ -30,6 +30,11 @@ var mySound;
 var title;
 //game over display
 var gameOver;
+//bonus Mario can get
+var donut;
+//position of the donut
+var donutX = 500;
+var donutY = 100;
 
 //load the background music for the game
 function preload() {
@@ -56,12 +61,14 @@ function setup() {
 	title = loadImage ("TitleGame.png");
 	//game over
 	gameOver = loadImage ("GameOver.png");
+	//donut image - bonus to player's score
+	gameOver = loadImage ("Donut.png");
 }
 
 function draw() {
 	//if the music ends, restart
 	if ((mySound.isPlaying() == false) && (userStop == false)) {  
-    	mySoun.play();
+    	mySound.play();
  	}
 	//grass and sky background of the game
 	background(bg);
@@ -85,6 +92,8 @@ function draw() {
 		image(bullet, opX, opY, bullet.width/30, bullet.height/30);
 		//speed the Bullet is moving
 		opX = opX - speedX;
+		//bonus for the player's score
+		image(donut, donutX, donutY, donut.width/6, donut.height/6);
 	}	
 	//if the Bullet leaves the screen, go back to the right side of the screen and re-fire at a random location between 0 and 400
 	if(opX<=-100) {
