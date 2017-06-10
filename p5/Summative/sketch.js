@@ -42,7 +42,7 @@ var donutY = 100;
 function preload() {
 	mySound = loadSound ('MarioMusic.mp3');
 	//https://downloads.khinsider.com/mario
-	death = loadSound ('Death.wav');
+	
 }
 
 function setup() {
@@ -130,8 +130,6 @@ function draw() {
 	//if it hits, the game is over 
 	if ((abs(posX-opX)<70) && (abs(posY-opY)<80)) {
 		background(gameOver);
-		death.setVolume(0.1);
-		death.play();
 		textSize(75);
 		speedX = 0;	
 		posX = opX;
@@ -141,8 +139,6 @@ function draw() {
 	//checking for collision between Fireball and Mario
 	if ((abs(posX-fireX)<70) && (abs(posY-fireY)<80)) {
 		background(gameOver);
-		death.setVolume(0.1);
-		death.play();
 		speedX = 0;	
 		posX = fireX;
 		posY = fireY;
