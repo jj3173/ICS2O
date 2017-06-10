@@ -166,19 +166,19 @@ function mouseClicked() {
 function keyPressed() {
 	//if the right arrow is pressed, Mario will move to the right
 	if (keyCode == RIGHT_ARROW) {
-		posX += 12;
+		posX += 25;
 	}
 	//if the left arrow is pressed, Mario will move to the left
 	else if (keyCode == LEFT_ARROW) {
-		posX -= 12;
+		posX -= 25;
 	}
 	//if the up arrow is pressed, Mario will move up 
 	else if (keyCode == UP_ARROW) {
 		//when the up button is pressed he will jump
-		posY -= 100;
+		posY -= 75;
 	}
 	//if the down arrow is pressed, Mario will move down
 	else if (keyCode == DOWN_ARROW) {
-		posY += 12;
+		posY += 25;
 	}
 }
