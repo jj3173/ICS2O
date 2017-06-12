@@ -137,7 +137,7 @@ function draw() {
 		text("Your score is " + score + "!", 175, 225);
 		//color white
 		fill (255, 255, 255); 
-		rect (770, 320, 250, 50);
+		rect (770, 320, 100, 50);
 		fill( 0, 0, 0);
 		textSize (30);
 		text ("Restart", 790, 340);
@@ -151,7 +151,7 @@ function draw() {
 		text("Your score is " + score + "!", 175, 225);
 		//color white
 		fill (255, 255, 255); 
-		rect (770, 320, 250, 50);
+		rect (770, 320, 100, 50);
 		fill( 0, 0, 0);
 		textSize (30);
 		text ("Restart", 790, 340);
