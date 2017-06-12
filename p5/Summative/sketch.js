@@ -129,32 +129,37 @@ function draw() {
 	//checking for collision between Bullet and Mario
 	//if it hits, the game is over 
 	if ((abs(posX-opX)<70) && (abs(posY-opY)<80)) {
+		//picture displayed when the games over
 		background(gameOver);
+		//text size of the gameOver
 		textSize(75);
 		speedX = 0;	
 		posX = opX;
 		posY = opY;
+		//displaying the score
 		text("Your score is " + score + "!", 175, 225);
 		//color white
 		fill (255, 255, 255); 
 		rect (770, 320, 150, 50);
 		fill( 0, 0, 0);
 		textSize (30);
-		text ("Restart", 820, 340);
+		text ("Restart", 800, 365);
 	}	
 	//checking for collision between Fireball and Mario
 	if ((abs(posX-fireX)<70) && (abs(posY-fireY)<80)) {
+		//picture displayed when the games over
 		background(gameOver);
 		speedX = 0;	
 		posX = fireX;
 		posY = fireY;
+		//displaying the score
 		text("Your score is " + score + "!", 175, 225);
 		//color white
 		fill (255, 255, 255); 
 		rect (770, 320, 150, 50);
 		fill( 0, 0, 0);
 		textSize (30);
-		text ("Restart", 820, 340);
+		text ("Restart", 800, 365);
 	}
 	//checking for collision between Mario and the donut
 	if ((abs(posX-donutX)<65) && (abs(posY-donutY)<90)) {
