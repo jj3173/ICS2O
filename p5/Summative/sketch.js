@@ -137,7 +137,7 @@ function draw() {
 		text("Your score is " + score + "!", 175, 225);
 		//color white
 		fill (255, 255, 255); 
-		rect (800, 250, 200, 70);
+		rect (800, 320, 250, 50);
 		fill( 0, 0, 0);
 		textSize (30);
 		text ("Restart", 870, 280);
@@ -151,10 +151,10 @@ function draw() {
 		text("Your score is " + score + "!", 175, 225);
 		//color white
 		fill (255, 255, 255); 
-		rect (800, 250, 200, 70);
+		rect (800, 320, 250, 50);
 		fill( 0, 0, 0);
 		textSize (30);
-		text ("Restart", 870, 280);
+		text ("Restart", 870, 340);
 	}
 	//checking for collision between Mario and the donut
 	if ((abs(posX-donutX)<65) && (abs(posY-donutY)<90)) {
