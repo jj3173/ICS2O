@@ -175,6 +175,7 @@ function draw() {
 		opX = 965;
 		speedX = 4;
 		score = 0;
+		textSize(75);
 	}
 }
 
