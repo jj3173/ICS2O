@@ -168,7 +168,7 @@ function draw() {
 	if ((mouseIsPressed) && (mouseY < 400) && (mouseY > 200) && (mouseX > 500) && (mouseX <965)) {
 		posX = 0;
 		opX = 965;
-		speed = 4;
+		speedX = 4;
 		score = 0;
 	}
 }
