@@ -138,8 +138,8 @@ function draw() {
 		posY = opY;
 		//displaying the score
 		text("Your score is " + score + "!", 175, 225);
-		//color white
-		fill (255, 255, 255); 
+		//color white-red
+		fill (245, 197, 197); 
 		rect (775, 320, 150, 50);
 		fill( 0, 0, 0);
 		textSize (30);
@@ -154,8 +154,8 @@ function draw() {
 		posY = fireY;
 		//displaying the score
 		text("Your score is " + score + "!", 175, 225);
-		//color white
-		fill (255, 255, 255); 
+		//color white-red
+		fill (245, 197, 197); 
 		rect (775, 320, 150, 50);
 		fill( 0, 0, 0);
 		textSize (30);
