@@ -135,6 +135,11 @@ function draw() {
 		posX = opX;
 		posY = opY;
 		text("Your score is " + score + "!", 175, 225);
+		fill (255, 45, 49); //red
+		rect (165, 545, 200, 70);
+		textSize (50);
+		fill (0, 0, 0);
+		text ("Restart", 180, 600);
 	}	
 	//checking for collision between Fireball and Mario
 	if ((abs(posX-fireX)<70) && (abs(posY-fireY)<80)) {
@@ -143,6 +148,11 @@ function draw() {
 		posX = fireX;
 		posY = fireY;
 		text("Your score is " + score + "!", 175, 225);
+		fill (255, 45, 49); //red
+		rect (165, 545, 200, 70);
+		textSize (50);
+		fill (0, 0, 0);
+		text ("Restart", 180, 600);
 	}
 	//checking for collision between Mario and the donut
 	if ((abs(posX-donutX)<65) && (abs(posY-donutY)<90)) {
@@ -151,6 +161,12 @@ function draw() {
 		//move the donut to a random spot between given numbers
 		donutX = random(400, 925);
 		donutY = random(50, 350);
+	}
+	//restart button
+	if ((mouseIsPressed) && (mouseY < 615) && (mouseY > 545) && (mouseX > 165) && (mouseX <365)) {
+		posX = 0;
+		opX = 965;
+		score = 0;
 	}
 }
 
