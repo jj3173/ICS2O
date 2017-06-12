@@ -1,0 +1,135 @@
+<!DOCTYPE html>   
+  
+<html> 
+<head>  
+
+<title>Musical Instrument</title>     
+  <style>
+
+		body {
+		background-color:#E6F8BC;
+		font-family: arial;
+		font-size: 19px;
+		
+		border-right-color:#659D30;
+		border-right-width:175px;
+		border-right-style:solid;
+
+		border-left-color:#659D30;
+		border-left-width:175px;
+		border-left-style:solid;
+		}
+
+		h1, h4 {
+		text-align: center; 
+           	background-color:#9DB959;
+		}
+
+
+		ul{
+		margin: 10px 10px 5px 10px;
+		text-align: left;
+		}
+		p {
+		margin: 10px 10px 5px 10px;
+		}
+
+
+ </style>
+ </head>
+
+<body>
+
+	<h1>Musical Instrument</h1>
+	<p>This page will inform you on the musical instrument I created!</p>
+
+
+	<h2></h2>
+	<p><p>
+	
+
+	<h2> Code </h2>
+	<p>This is the code I used for this musical instrument assignment.</p>
+	<pre>
+	/*Musical Instrument Assignment
+	2017-05-23
+	Jieru*/
+ 
+	//variables
+  	int key1 = 2; 
+  	int key2 = 3; //key2 is wired to port 3
+  	int key3 = 4;  //key3 is wired to port 4
+  	int key4 = 5;  //key4 is wired to port 5
+  	int key5 = 6;  //key5 is wired to port 6  
+  	int speaker = 13; //the speaker is wired to port 13
+ 
+	void setup() {
+	pinMode(key1, INPUT);
+	pinMode(key2, INPUT);
+	pinMode(key3, INPUT);
+	pinMode(key4, INPUT);
+	pinMode(key5, INPUT);
+	speaker(speaker, OUTPUT);
+	)
+ 
+	void loop() {
+	    //if key1 is pressed, note C will be played
+	    if (digitalRead(key1)==HIGH) {
+		//note C
+	   	c ();
+	    } 
+            //if key2 is pressed, note D will be played
+	    if (digitalRead(key2)==HIGH) {
+		//note D
+	   	d ();
+	    }
+	    //if key3 is pressed, note E will be played
+	    if (digitalRead(key3)==HIGH) {
+		//note E
+	    	e ();
+	    } 
+	    //if key4 is pressed, note F will be played
+	    if (digitalRead(key4)==HIGH) {
+		//note F
+    		f ();
+	    }
+	    //if key5 is pressed, note G will be played
+    	    if (digitalRead(key5)==HIGH) {
+		//note G
+    		g ();
+    	    } 
+	}	
+ 
+	//note C
+	void c () { 
+	  tone(speaker, 262, 10);
+	}
+
+	//note D
+	void d () {
+	  tone(speaker, 294, 30);
+	}
+
+	//note E
+	void e () { 
+	  tone(speaker, 330, 30);
+	}
+
+	//note F
+	void f () { 
+	  tone(speaker, 349, 30);
+	}
+
+	//note G
+	void g () {
+	  tone(speaker, 392, 30);
+	}
+	</pre>
+
+
+</body>
+
+</html>
+
+
+
