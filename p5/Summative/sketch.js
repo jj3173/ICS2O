@@ -143,7 +143,7 @@ function draw() {
 		rect (770, 320, 150, 50);
 		fill( 0, 0, 0);
 		textSize (30);
-		text ("Restart", 800, 360);
+		text ("Restart", 800, 357);
 	}	
 	//checking for collision between Fireball and Mario
 	if ((abs(posX-fireX)<70) && (abs(posY-fireY)<80)) {
@@ -159,7 +159,7 @@ function draw() {
 		rect (770, 320, 150, 50);
 		fill( 0, 0, 0);
 		textSize (30);
-		text ("Restart", 800, 360);
+		text ("Restart", 800, 357);
 	}
 	//checking for collision between Mario and the donut
 	if ((abs(posX-donutX)<65) && (abs(posY-donutY)<90)) {
