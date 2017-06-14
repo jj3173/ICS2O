@@ -149,6 +149,7 @@ function draw() {
 	if ((abs(posX-fireX)<70) && (abs(posY-fireY)<80)) {
 		//picture displayed when the games over
 		background(gameOver);
+		textSize(75);
 		speedX = 0;	
 		posX = fireX;
 		posY = fireY;
