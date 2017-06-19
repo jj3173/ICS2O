@@ -1,6 +1,6 @@
 /* Summative Game
 Jieru 
-Last Edited: 2017-06-09
+Last Edited: 2017-06-19
 */
 
 //variables used for this game
@@ -35,13 +35,15 @@ var gameOver;
 //bonus Mario can get
 var donut;
 //position of the donut
+//x-position
 var donutX = 500;
+//y-position
 var donutY = 100;
 
 //load the background music for the game
 function preload() {
 	mySound = loadSound ('MarioMusic.mp3');
-	//https://downloads.khinsider.com/mario
+	//this sound was found from this websitehttps://downloads.khinsider.com/mario
 	
 }
 
@@ -83,6 +85,7 @@ function draw() {
 		image(title, 200, 50, title.width*2, title.height*2);
 		//start button
 		textSize(75);
+		//text that says "start" in the underneath the title
 		text("START", 325, 350); 
 	}
 	//if the mouse is clicked ...
@@ -112,8 +115,11 @@ function draw() {
 	
 	//if the player reaches a score of 10
 	if(score >= 10) { 
+		//picture of the Fireball will appear
 		image(fireball, fireX, fireY, fireball.width/1.5, fireball.height/1.5);
+		//will come from the right side of the screen and towards the left
 	  	fireX = fireX - speedX;
+		//if the X position of the Fireball, return back to the right side of the screen
 		if(fireX<=-100) {
 			//return to right side of screeen
 			fireX = 965
@@ -133,6 +139,7 @@ function draw() {
 		background(gameOver);
 		//text size of the gameOver
 		textSize(75);
+		//the speed will stop, making the opponents no longer move
 		speedX = 0;	
 		posX = opX;
 		posY = opY;
@@ -140,26 +147,32 @@ function draw() {
 		text("Your score is " + score + "!", 175, 225);
 		//color white-red
 		fill (245, 197, 197); 
+		//box that surrounds the Restart 
 		rect (775, 320, 150, 50);
 		fill( 0, 0, 0);
 		textSize (30);
+		//text saying restart
 		text ("Restart", 800, 357);
 	}	
 	//checking for collision between Fireball and Mario
 	if ((abs(posX-fireX)<70) && (abs(posY-fireY)<80)) {
 		//picture displayed when the games over
 		background(gameOver);
+		//text size of the gameOver
 		textSize(75);
+		//the speed will stop, making the opponents no longer move
 		speedX = 0;	
-		posX = fireX;
-		posY = fireY;
+		posX = opX;
+		posY = opY;
 		//displaying the score
 		text("Your score is " + score + "!", 175, 225);
 		//color white-red
 		fill (245, 197, 197); 
+		//box that surrounds the Restart 
 		rect (775, 320, 150, 50);
 		fill( 0, 0, 0);
 		textSize (30);
+		//text saying restart
 		text ("Restart", 800, 357);
 	}
 	//checking for collision between Mario and the donut
@@ -172,6 +185,7 @@ function draw() {
 	}
 	//restart button
 	if ((mouseIsPressed) && (mouseY < 400) && (mouseY > 200) && (mouseX > 500) && (mouseX <965)) {
+		//X position of Mario is 0 
 		posX = 0;
 		opX = 965;
 		speedX = 4;
